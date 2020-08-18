@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--文档使用 UTF-8 字符编码 -->
+    <meta charset="utf-8">
+    <meta name="罗向宇" content="练习使用呀">
+    <!--页面添加图标，存为标签等情况显示，16*16的大小-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/xiumi.png">
+
+
+    <!--应用css-->
+    <!--<link rel="stylesheet" href="styles/style.css">-->
+    <style>
+    header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+    }
+    nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:15000px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+    }
+    section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+    }
+    footer {
+    background-color:rgb(0, 225, 255);
+    color:rgb(0, 0, 0);
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+    }   
+    main{
+    text-align:left;
+    float:left;
+    padding:5px;
+    }
+    p {
+        background-image: url("images/head-portrait.jpg");
+    }
+    </style>
+    <!--为页面中的所有段落设置一个背景图片-->
+    <!--网页题目-->
+    <title>我的测试页面</title>
+
+  </head>
+
+  <body>
+
+    <!--页眉-->
+    <header> <!-- 本站所有网页的统一主标题 -->
+      <h1 align="center">这是我的测试页面</h1>
+    </header>
+
+    <nav> <!-- 本站统一的导航栏 -->
+      <ul>
+        <li><a href="https://xiumi.us/#/">秀米</a></li>
+        <li><a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US">火狐</a></li>
+        <!-- 共n个导航栏项目，省略…… -->
+      </ul>
+      <form> <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
+        <input type="search" name="q" placeholder="要搜索的内容">
+        <input type="submit" value="搜索">
+      </form>
+    </nav>
+
+
+    
+
+    <!--导航栏-->
+    
+
+    <main> <!-- 网页主体内容 -->
+      
+        
+      <!--侧边栏-->
+      <aside> <!-- 侧边栏在主内容右侧 -->
+        <h2>相关链接</h2>
+        <ul>
+          <li><a href="https://xiumi.us/#/">秀米</a></li>
+          <li><a href="https://mp.weixin.qq.com/">微信公众平台</a></li>
+          <!-- 侧边栏有n个超链接，略略略…… -->
+        </ul>
+      </aside>
+
+      <!--段落-->
+      <p>
+        我的小熊最可爱,我的小熊最可爱,我的小熊最可爱
+        <br>
+        我的小熊最可爱,我的小熊最可爱,我的小熊最可爱
+        <br>
+        我的小熊最可爱,我的小熊最可爱,我的小熊最可爱
+      </p>
+      <p class="editor-note">我的小熊最可爱</p>
+      <p>我的小熊最<strong>可爱</strong></p>
+
+      <!--同一个页面之间的相互跳转-->
+      <p>点击 <a href="#bird_address">红喉北蜂鸟</a> 跳转到红喉北蜂鸟</p>
+
+      <h2>无序列表</h2>
+      <p>微信公众平台是一个很棒的地方，无论你是</p>  
+      <!--无序列表-->
+        <ul> 
+          <li>学生</li>
+          <li>上班族</li>
+          <li>还是专业的博主</li>
+        </ul>
+      <p>都可以完成运营</p>
+      <p>但是你应该按照这样的顺序学习</p>
+      <h2>有序列表</h2>
+      <!--有序列表-->
+      <ol>
+        <li>首先完成对公众号的注册</li>
+        <li>然后学会在秀米上的排版</li>
+        <li>最后把秀米上的内容导入到公众号进行发布</li>
+      </ol>
+
+      <!--em表示斜体-->
+      <p>这样用户就<em>看</em>得到了</p>
+      <hr>
+
+      
+      
+      <!--插入一个链接-->
+      <p align="center">以下是秀米的网址</p>
+      <a href="https://xiumi.us/#/" title="这是个编辑页面">秀米网址</a>
+      <br>
+
+
+      <!--alt:对图片的文字描述，用于在图片无法显示或不能被看到的情况-->
+      <!--title:鼠标悬停时显示的内容-->
+      <a href="https://xiumi.us/#/">
+        <img src="images/xiumi.png" alt="秀米" title="点击该图片可进入秀米网站">
+      </a>
+      <!-- <figure> 和 <figcaption> 元素：为图片提供一个语义容器，在标题和图片之间建立清晰的关联。-->
+      <figure>
+        <img src="images/xiumi.png" alt="秀米" title="点击该图片可进入秀米网站" width="207" height="63">
+        <figcaption>这是秀米的图片</figcaption>
+      </figure>
+      <hr>
+      <!--插入图片：图像元素不需要通过内容来产生效果，它的作用是向其所在的位置嵌入一个图像。-->
+      <!--src:包含图像文件路径的地址.alt:图像的描述内容-->
+      <h3 align="center">这是我的公众号的头像呀</h3>
+      <img src="images/head-portrait.jpg" alt="测试图片">
+      <hr>
+
+
+      <!--插入视频-->
+      <video src="images/rabbit320.webm" controls>
+        <p>你的浏览器不支持 HTML5 视频。可点击<a href="images/rabbit320.mp4">此链接</a>观看</p>
+      </video>
+      <video controls>
+        <source src="images/rabbit320.mp4" type="video/mp4">
+        <source src="images/rabbit320.webm" type="video/webm">
+        <p>你的浏览器不支持 HTML5 视频。可点击<a href="images/rabbit320.mp4">此链接</a>观看</p>
+      </video>
+
+      <!--插入音频-->
+      <audio controls>
+        <source src="images/viper.mp3" type="audio/mp3">
+        <source src="images/viper.ogg" type="audio/ogg">
+        <p>你的浏览器不支持 HTML5 音频，可点击<a href="images/viper.mp3">此链接</a>收听。</p>
+      </audio>
+      <br>
+      <hr>
+
+
+      <!--插入<iframe>-->
+      <!--<iframe src="https://developer.mozilla.org/en-US/docs/Glossary"
+        width="100%" height="500" frameborder="0"
+        allowfullscreen sandbox>
+        <p> <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+        Fallback link for browsers that don't support iframes
+            </a> 
+        </p>
+      </iframe>-->
+
+      <!--使用该<embed>元素嵌入Flash影片-->
+        <h1>Embed element example</h1>
+        <embed src="whoosh.swf" quality="medium"
+        bgcolor="#ffffff" width="550" height="400"
+        name="whoosh" align="middle" allowScriptAccess="sameDomain"
+        allowFullScreen="false" type="application/x-shockwave-flash"
+        pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+      <!--<object>将PDF嵌入一个页面的例子-->
+        <object data="mypdf.pdf" type="application/pdf"
+        width="800" height="1200" typemustmatch>
+        <p>You don't have a PDF plugin, but you can <a href="myfile.pdf">download the PDF file.</a></p>
+        </object>
+
+      <!--插入SVG图片-->
+      <img src="images/shiliangtu.svg" alt="triangle with all three sides equal" height="500px" width="500px" />
+
+      <br>
+      <hr>
+
+      <!--跨浏览器支持-->
+      <img src="images/shiliangtu.jpg" alt="triangle with equal sides" srcset="images/shiliangtu.svg">
+
+      <br>
+      <hr>
+
+      <!--内联SVG-->
+      <svg width="300" height="200"><rect width="100%" height="100%" fill="green" /></svg>
+      
+      <br>
+      <hr>
+
+      <svg width="100%" height="100%">
+        <rect width="100%" height="100%" fill="yellow" />
+        <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+        <polygon points="120,0 240,225 0,225" fill="purple"/>
+        <text x="50" y="100" font-family="Verdana" font-size="55"
+              fill="white" stroke="black" stroke-width="2">
+                我最屌!
+        </text>
+      </svg>
+      
+      <br>
+      <hr>
+
+    <!--自适应图片 使用srcset和sizes-->
+    <img srcset="images/head-portrait.jpg 320w,
+              images/head-portrait.jpg 480w,
+              images/head-portrait.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="images/head-portrait.jpg" alt="公众号头像">
+     <br>
+     <hr>
+
+     <!--分辨率切换-->
+     <img srcset="images/head-portrait.jpg,
+     images/head-portrait.jpg 1.5x,
+     images/head-portrait.jpg 2x"
+    src="images/head-portrait.jpg" alt="公众号头像">
+    <!--
+      分辨率切换2
+    <picture>
+      <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+      <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+      <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+    </picture>
+    -->
+    
+
+
+
+      <br>
+      <hr>
+      <!--下面这些文字，i表示斜体，b表示粗体，u表示下划线-->
+      <h2>例子1</h2>
+      <p>
+      <a id="bird_address"><strong>红喉北蜂鸟</strong></a>（学名：<i>Archilocus colubris</i>）
+          是北美东部最常见的蜂鸟品种。
+      </p>
+        
+      <!-- 舶来词 -->
+      <p>
+        菜单上有好多舶来词汇，比如 <i lang="uk-latn">vatrushka</i>（东欧乳酪面包）,
+        <i lang="id">nasi goreng</i>（印尼炒饭）以及<i lang="fr">soupe à l'oignon</i>（法式洋葱汤）。
+      </p>
+        
+      <!-- 已知的错误书写 -->
+      <p>
+        总有一天我会改掉写<u style="text-decoration-line: underline; text-decoration-style: wavy;">措字</u>的毛病。
+      </p>
+        
+      <!-- 在一组指令中突出显示关键字 -->
+      <ol>
+        <li>
+          <b>切</b>下两片面包，
+        </li>
+        <li>
+          在两片面包中间<b>夹入</b>一片西红柿和一片生菜叶。
+          </li>
+      </ol>
+      <hr>
+
+
+      <!--链接到非HTML文件要留下清晰的提示-->
+      <h2>带有提示的非html文件</h2>
+      <br>
+      <p><a href="http://www.example.com/large-report.pdf">
+        下载销售报告（PDF, 10MB）
+      </a>
+      </p>
+
+      <p>
+        <a href="http://www.example.com/video-stream/">
+          观看视频（将在新标签页中播放, HD画质）
+        </a>
+      </p>
+
+      <p>
+        <a href="http://www.example.com/car-game">
+        进入汽车游戏（需要Flash插件）
+        </a>
+      </p>
+      <hr>
+
+
+      <!--下载链接时使用download属性-->
+      <h2>链接的下载</h2>
+      <br>
+      <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+        download="firefox-latest-64bit-installer.exe">
+        Download Latest Firefox for Windows (64-bit) (English, US)
+      </a>
+      <hr>
+
+      <!--电子邮箱链接-->
+      <h2>发送电子邮件</h2>
+      <br>
+      <a href="mailto:2436186324@qq.com">点击这里向我发送电子邮件</a>
+
+      <!--描述列表-->
+      <!--描述列表使用与其他列表类型不同的闭合标签— <dl>; 此外，每一项都用 <dt>元素闭合。每个描述都用<dd>元素闭合。-->
+      <h2>描述列表</h2>
+      <dl>
+        <dt>内心独白</dt>
+          <dd>戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到。</dd>
+        <dt>语言独白</dt>
+          <dd>戏剧中，某个角色把自己的想法直接进行念白表演，观众和其他角色都可以听到。</dd>
+        <dt>旁白</dt>
+          <dd>戏剧中，为渲染幽默或戏剧性效果而进行的场景之外的补充注释念白，只面向观众，内容一般都是角色的感受、想法、以及一些背景信息等。</dd>
+      </dl>
+
+      <hr>
+      <!--块引用-->
+      <h2>块引用</h2>
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"></blockquote>
+        <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+        Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+      </blockquote>
+      <hr>
+
+      <!--引文，cite元素-->
+      <h2>引文</h2> 
+      <p>你好！欢迎访问我的激励网页！<a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>孔子</cite></a>曰：</p>
+      <blockquote cite="https://zh.wikipedia.org/zh-hans/孔子">
+        <p>譬如为山，未成一篑，止，吾止也。譬如平地，虽覆一篑，进，吾往也。</p>
+      </blockquote>
+      <p>要保持乐观，<q cite="http://www.affirmationsforpositivethinking.com/">不要说泄气的话</q>。
+        （源自 <a href="http://www.affirmationsforpositivethinking.com/"><cite>Affirmations for Positive Thinking</cite></a>。）</p>
+
+      <hr>
+      <!--缩略语-->
+      <h2>缩略语</h2>
+      <p>我觉得， <abbr title="罗向宇">向宇</abbr> 最屌。</p>
+      <!--上标和下标-->
+      <h2>上标和下标</h2>
+      <p>咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。</p>
+      <p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+
+      <hr>
+      <!--标记时间日期-->
+      <h2>标记时间日期</h2>
+      <!-- 标准简单日期 -->
+      <time datetime="2016-01-20">20 January 2016</time>
+      <br>
+      <!-- 只包含年份和月份-->
+      <time datetime="2016-01">January 2016</time>
+      <br>
+      <!-- 只包含月份和日期 -->
+      <time datetime="01-20">20 January</time>
+      <br>
+      <!-- 只包含时间，小时和分钟数 -->
+      <time datetime="19:30">19:30</time>
+      <br>
+      <!-- 还可包含秒和毫秒 -->
+      <time datetime="19:30:01.856">19:30:01.856</time>
+      <br>
+      <!-- 日期和时间 -->
+      <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+      <br>
+        <!-- 含有时区偏移值的日期时间 -->
+      <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+      <br>
+      <!-- 调用特定的周 -->
+      <time datetime="2016-W04">The fourth week of 2016</time>
+
+      <hr>
+      <h2>搜索栏</h2>
+      <form> <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
+      <input type="search" name="q" placeholder="要搜索的内容">
+      <input type="submit" value="搜索">
+
+      <hr>
+      <h2>无语义元素</h2>
+      <br>
+      <p>国王喝得酩酊大醉，在凌晨 1 点时才回到自己的房间，踉跄地走过门口。<span class="editor-note">[编辑批注：此刻舞台灯光应变暗]</span>.</p>
+      <br>
+      <!--一个电子商务网站页面上有一个一直显示的购物车组件-->
+      <div class="shopping-cart">
+        <h2>购物车</h2>
+      <ul>
+        <li>
+          <p><a href=""><strong>银耳环</strong></a>：$99.95.</p>
+          <img src="images/gouwuche.png" alt="Silver earrings">
+        </li>
+        <li>
+          ...
+        </li>
+      </ul>
+      <p>售价：$237.89</p>
+      </div>
+
+
+
+
+
+
+      <!--引用js-->
+      <!--<script src="scripts/script.js"></script>-->
+
+    </main>
+    <footer> <!-- 本站所有网页的统一页脚 -->
+      <p>这只是个练习哈</p>
+    </footer>
+  </body>
+</html> 
